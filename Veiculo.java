@@ -1,16 +1,20 @@
 package Motorizados.classes;
 
-public class Moto extends Veiculo {
-    private boolean exigeCapacete;
-    private String maneabilidade;
-    private boolean travada;
+public class Veiculo {
 
-    public void travar () {
-        this.travada = true;
+    private String marca;
+    private String nome;
+    private double valor;
+    private double consumo;
+    private boolean ligado;
+    
+    public void ligar () {
+        this.ligado = true;
+        System.out.println("Chamou o método ligar");
     }
-
-    public void destravar () {
-        this.travada = false;
+    
+    public void desligar() {
+        this.ligado = false;
     }
 
 }
